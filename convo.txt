@@ -1,0 +1,11 @@
+1st commit by Suprotim
+    done-{
+        so react setup is done 
+        the first setup for tailwind components are done 
+        nav bar and product list Ui added 
+    }
+
+    next instruction{
+        do the sign up and login routes
+    } 
+    
