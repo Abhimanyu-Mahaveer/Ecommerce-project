@@ -16,5 +16,7 @@
         login page add korlam
         Routing add korlam using react-router-dom
         (signup and login er ja ja add korlam kichhu dekhar arr dorkar nei just proceed with the latter stuff)
-        
+        Cart page add korlam (routing o add kore diyechi)
+        Check out page and its routing o addk kore diyechi
+        Product details page banalam and otar routing o add kore diyechi
     }
