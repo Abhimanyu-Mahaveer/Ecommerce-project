@@ -16,5 +16,15 @@
         login page add korlam
         Routing add korlam using react-router-dom
         (signup and login er ja ja add korlam kichhu dekhar arr dorkar nei just proceed with the latter stuff)
-        
+        Cart page add korlam (routing o add kore diyechi)
+        Check out page and its routing o addk kore diyechi
+        Product details page banalam and otar routing o add kore diyechi
+    }
+
+    Suprotim:{
+        changed the product details 
+        installing json-server to create a dummy api 
+        used the dummy json product and moved into data.json
+        then ran the json server by "json-server --watch data.json --port 8080" to fetch the data
+        then using Selector fetched the data from this api to Product.js 
     }
