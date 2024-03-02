@@ -28,3 +28,9 @@
         then ran the json server by "json-server --watch data.json --port 8080" to fetch the data
         then using Selector fetched the data from this api to Product.js 
     }
+      Suprotim:{
+       changed the brand and category portion acc, to the new data given by dummyjson
+        made the category checkbox functional by calling fetchAllProductsByFilters in productAPI.js 
+        made the sorting filter BUT ITS FOR SOME REASON NOT SHOWING THE PRODUCTS AS INTENDED 
+        debug korish eta ektu 
+    }
