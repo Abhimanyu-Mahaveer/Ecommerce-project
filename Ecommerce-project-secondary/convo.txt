@@ -37,15 +37,16 @@
     Bratin: {
         -Multiple sorting based on category has been done, uncheck korle abr revert back hoye jachhe but multiple categories eksathe select hochhe na
         -Pagination o complete, mane per page has a limited no. of products displayed and rest baki pages e dekha jabe
-        -app folder er moddhe ekta constants.js banano hoyeche jar moddhe constants store kore export kora hochhe
+        -app folder er moddhe ekta constants.js banano hoyeche jar moddhe constants store kore export kora hochhe( like Items_Per_Page )
         -list of bugs: {
-            1. sorting hochhe na ota korte hobe 
-            2. login page ta debug korte bhule gechi lol
+            1. sorting hochhe na ota korte hobe --> done just order wise hochhe na like ascending or descending order e
+            2. login page ta debug korte bhule gechi lol 
             3. pagination er somosya --> video teh dekhiyeche req.headers e "X-Total-Count" bole ekta header ache but ami toh pelam na, hence kichu jinis product slice e gondogol hoyeche so possible je jehetu eta ek bochor ager so maybe some things have changed or might have become obsolete, hence we need to read the docs.
-        }
+            (paginagion also done)
+       }
         Debugging: {
-            1. otake ig amader raw js concept lagiye solve korte hobe using array.filter()
+            1. partially done, finally hoye jabe after backend
             2. login er debug toh jani so kinda sorted e
-            3. apatoto hardcoded kore totalItems = 100 kore rekhechi, but dekhte hobe kibhabe amra change korte parbo, arr nale lets proceed and lets see o backend e ki kore
+            3. debugged
         }
     }
