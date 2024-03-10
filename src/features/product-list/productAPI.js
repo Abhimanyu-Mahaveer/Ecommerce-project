@@ -9,6 +9,16 @@ export function fetchAllProducts() {
   );
 } 
 
+export function fetchProductById(id) {
+  return new Promise(async (resolve) =>{
+    //TODO : we will not hardcode-server URL here, we will change this later on 
+    const response = await fetch('http://localhost:8080/products/'+id)
+    const data=await response.json() 
+    resolve({data}) 
+  } 
+  );
+} 
+
 export function fetchAllProductsByFilters({filter,sort,pagination}) {
   //TODO: on server we will support multiple values 
   let queryString='';

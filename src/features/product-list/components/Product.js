@@ -624,18 +624,18 @@ const Pagination = ({ page, setPage, handlePage, totalItems }) => {
     </>
   );
 };
-const ProductGrid = ({ data }) => {
+
+// data?.map((product) products.map((product)
+const ProductGrid = ({ data}) => {
   return (
     <div>
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {data?.map((product) => (
-              <Link to="/product-details">
-                <div
-                  key={product.id}
-                  className="group relative border-solid border-2 p-2 border-gray-200"
-                >
+           
+            { data?.map((product) => ( 
+              <Link to={`/product-details/${product.id}`} key ={product.id}>
+                <div className="group relative border-solid border-2 p-2 border-gray-200" >
                   <div className="min-h-60 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
                     <img
                       src={product.thumbnail}

@@ -55,4 +55,5 @@
     }
     Suprotim:{
         made the brands and categories calls from api and changed its statis character. 
+        product detail page is done ,calling the api using the product's id 
     }
