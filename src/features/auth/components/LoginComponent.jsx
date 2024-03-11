@@ -7,11 +7,11 @@ import {
   incrementByAmount,
   incrementAsync,
   incrementIfOdd,
-  selectCount,
+  
 } from '../authSlice';
 
 export default function LoginComponent() {
-  const count = useSelector(selectCount);
+  
   const dispatch = useDispatch();
 
   return (
