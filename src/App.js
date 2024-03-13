@@ -14,12 +14,16 @@ import {
 } from "react-router-dom";
 import CheckoutPage from './pages/CheckoutPage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
-
+import Protected from './features/auth/components/Protected';
+import { fetchItemsByUserIdAsync } from './features/cart/cartSlice';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectLoggedInUser } from './features/auth/authSlice';
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Home></Home>
+      <Protected><Home></Home></Protected>
     ),
   },
   {
@@ -32,19 +36,25 @@ const router = createBrowserRouter([
   },
   { //only for now (testing) later page will be added
     path: "/cart",
-    element: <CartPage></CartPage>
+    element: <Protected><CartPage></CartPage></Protected>
   },
   {
     path:"/checkout",
-    element:<CheckoutPage></CheckoutPage>
+    element:<Protected><CheckoutPage></CheckoutPage></Protected>
   }, 
   {
     path:"/product-details/:id", 
-    element:<ProductDetailsPage></ProductDetailsPage>
+    element:<Protected><ProductDetailsPage></ProductDetailsPage></Protected> 
   }
 ]);
 
 function App() {
+  const dispatch =useDispatch(); 
+  const user =useSelector(selectLoggedInUser); 
+  useEffect(()=>{
+    if(user)
+    {dispatch(fetchItemsByUserIdAsync(user.id))}
+  },[dispatch, user])
   return (
     <div className="App">
       <RouterProvider router={router} />

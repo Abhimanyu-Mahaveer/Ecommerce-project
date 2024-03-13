@@ -57,3 +57,8 @@
         made the brands and categories calls from api and changed its statis character. 
         product detail page is done ,calling the api using the product's id 
     }
+    Suprotim:{
+        UserAPI,login/Signup pages done 
+        we have one user rn (test@gmail.com and pass - Him@12345)
+        checkout page done , add, price and remove also 
+    }
