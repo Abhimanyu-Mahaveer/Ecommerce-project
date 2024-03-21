@@ -54,11 +54,22 @@
         just checking 
     }
     Suprotim:{
-        made the brands and categories calls from api and changed its statis character. 
+        made the brands and categories calls from api and changed its static character. 
         product detail page is done ,calling the api using the product's id 
     }
     Suprotim:{
         UserAPI,login/Signup pages done 
         we have one user rn (test@gmail.com and pass - Him@12345)
         checkout page done , add, price and remove also 
+    }
+    Bratin: {
+        -so checkout page and orders part is done
+        -oder success page is also done
+        -ekta 404 page has been added
+        -ektai problem je order id ta is showing [object] ota while developing backend we'll fix it
+        -etar jonno orders and order-success page o bhalo korre display hochhe na becoz of id
+        -lastly, lets say jodi user nijer address na add kore ba select kore and payment details 
+            jodi na selecct kore then ekta error message diye debe seta ami add kore debo but i was 
+            thinking je i should add something else instead of alert().
+            Apatoto alert() diye debo and later on bhabchi ki kora jaye. 
     }

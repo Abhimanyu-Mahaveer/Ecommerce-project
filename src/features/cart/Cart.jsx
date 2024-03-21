@@ -5,7 +5,7 @@ import {
   deleteItemFromCartAsync,
   selectItems, updateCartAsync,
 } from './cartSlice';
-import { Link } from 'react-router-dom';
+import { Link,Navigate } from 'react-router-dom';
 
 
 export default function Cart() {
@@ -21,6 +21,7 @@ export default function Cart() {
   }
   return (
   <>
+  {!items.length && <Navigate to ='/' replace ={true}></Navigate>}
   <div className='mx-auto mt-10 bg-white max-w-7xl px-4 sm:px-6 lg:px-8'>
     <div className="mx-auto py-8 max-w-7xl px-4 sm:px-6 lg:px-8">
     <h1 class="text-4xl font-bold tracking-tight text-gray-900 my-3">Cart</h1>
